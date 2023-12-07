@@ -7,28 +7,138 @@
     tools:context=".MainActivity">
 
     <RadioGroup
-        android:layout_width="143dp"
-        android:layout_height="126dp"
+        android:id="@+id/rgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.119">
+        app:layout_constraintVertical_bias="0.084">
 
         <RadioButton
             android:id="@+id/button_mr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:padding="5dp"
             android:text="Mr" />
 
         <RadioButton
             android:id="@+id/button_mme"
-            android:layout_width="80dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:text="Mme" />
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Saisissez votre nom"
+        android:inputType="text"
+        android:textColorHint="#515151"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Saisissez votre nom"
+        android:inputType="text"
+        android:textColorHint="#515151"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Choix"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <CheckBox
+        android:id="@+id/check_certif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="Session de certification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <CheckBox
+        android:id="@+id/check_hack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hackathon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Nom"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nom"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Prénom"
+        android:textSize="17dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/prenom"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
